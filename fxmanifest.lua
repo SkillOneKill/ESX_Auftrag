@@ -1,23 +1,21 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Dein Name'
+author 'SkillOneKill'
 description 'Auftragssystem für bestimmte Jobs mit Cooldown, Items, und Belohnung'
 version '1.0.0'
 
--- Client und Server Scripte
 client_scripts {
     'config.lua',
     'client.lua'
 }
 
 server_scripts {
-    '@oxmysql/lib/MySQL.lua', -- falls du MySQL brauchst
+    '@oxmysql/lib/MySQL.lua', 
     'config.lua',
     'server.lua'
 }
 
--- Abhängigkeiten
 dependencies {
     'es_extended',
     'ox_inventory',
@@ -25,8 +23,6 @@ dependencies {
     'ox_lib'
 }
 
--- Ressourcen, die als Shared genutzt werden können
 shared_script '@es_extended/imports.lua'
 shared_script '@ox_lib/init.lua'
-
 lua54 'yes'
