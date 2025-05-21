@@ -12,3 +12,13 @@ Ein simples, erweiterbares Auftragssystem, das es Spielern ermöglicht, bestimmt
 🎁 Belohnungen nach Abschluss (Items, XP, Währung etc.)
 
 📦 Modularer Aufbau für einfache Erweiterbarkeit
+
+
+## in die items.lua rein bei Ox_inevntory
+
+    ["auftrag_beweis"] = {
+	    label = "Beweisstück",
+	    weight = 1,
+	    stack = true,
+	    lose = true,
+    },
